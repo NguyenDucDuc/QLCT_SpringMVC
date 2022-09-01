@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Ðăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Dang ky" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    
+    <definition name="addIncome" extends="baseLayout">
+        <put-attribute name="title" value="Add income" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addIncome.jsp" />
+    </definition>
+    
+    <definition name="addSpending" extends="baseLayout">
+        <put-attribute name="title" value="Add spending" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addSpending.jsp" />
+    </definition>
+    
+    <definition name="viewIncome" extends="baseLayout">
+        <put-attribute name="title" value="View income" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/viewIncome.jsp" />
+    </definition>
+    
+    <definition name="viewSpending" extends="baseLayout">
+        <put-attribute name="title" value="View spending" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/viewSpending.jsp" />
+    </definition>
+    
+    <definition name="createGroup" extends="baseLayout">
+        <put-attribute name="title" value="Create group" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/createGroup.jsp" />
+    </definition>
+    
+    <definition name="warning" extends="baseLayout">
+        <put-attribute name="title" value="Warning" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/warning.jsp" />
+    </definition>
+    
+    <definition name="addMember" extends="baseLayout">
+        <put-attribute name="title" value="Add member" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addMember.jsp" />
+    </definition>
+    
+    <definition name="myGroups" extends="baseLayout">
+        <put-attribute name="title" value="My groups" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/myGroups.jsp" />
+    </definition>
+    
+    <definition name="memberOf" extends="baseLayout">
+        <put-attribute name="title" value="My groups" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/memberOf.jsp" />
+    </definition>
+    
+    <definition name="addIncomeGroup" extends="baseLayout">
+        <put-attribute name="title" value="Add income group" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addIncomeGroup.jsp" />
+    </definition>
+    
+    <definition name="acceptIncome" extends="baseLayout">
+        <put-attribute name="title" value="Accept income group" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/acceptIncome.jsp" />
+    </definition>
+    
+    <definition name="summary" extends="baseLayout">
+        <put-attribute name="title" value="Summary" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/summary.jsp" />
+    </definition>
+    
+    <definition name="requireLogin" extends="baseLayout">
+        <put-attribute name="title" value="Require login" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/requireLogin.jsp" />
+    </definition>
+    
+    <definition name="userBlock" extends="baseLayout">
+        <put-attribute name="title" value="User block" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/userBlock.jsp" />
+    </definition>
+    <definition name="forbidden" extends="baseLayout">
+        <put-attribute name="title" value="Forbidden" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/forbidden.jsp" />
+    </definition>
+    <definition name="chat" extends="baseLayout">
+        <put-attribute name="title" value="Chat" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/chat.jsp" />
+    </definition>
+    <definition name="chatGroup" extends="baseLayout">
+        <put-attribute name="title" value="Chat group" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/chatGroup.jsp" />
+    </definition>
+    
+    
+    
+    
+    
+    <definition name="baseAdminLayout"
+                template="/WEB-INF/layout/baseAdmin.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+        <put-attribute name="content" value="" />
+        
+    </definition>
+    
+    <definition name="homeAdmin" extends="baseAdminLayout">
+        <put-attribute name="title" value="Admin Manager" />
+        
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/homeAdmin.jsp" />
+    </definition>
+    
+    <definition name="userManager" extends="baseAdminLayout">
+        <put-attribute name="title" value="User Manager" />
+        
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/userManager.jsp" />
+    </definition>
+    
+</tiles-definitions>
